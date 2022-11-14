@@ -2,12 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-    font-family: 'Android';
-    src: url('../fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 :root {
     --cor0: #c5ebd6;
@@ -19,7 +14,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', sans-serif;
+    --fonte-titulo: 'Oswald', sans-serif;
 }
 
 * {
@@ -32,10 +27,6 @@ body {
     font-family: var(--fonte-padrao);
 }
 
-a.externo::after {
-    content: '\00A0\1F517';
-}
-
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -45,11 +36,14 @@ header {
 
 header > h1 {
     color: #fff;
-    font-family: var(--fonte-destaque);
-    font-size: 3em;
-    font-weight: normal;
+    font-family: var(--fonte-titulo);
+    /*font-size: 3em;*/
+    /*font-weight: normal;*/
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 5vw;
 }
 
 header > p {
@@ -63,28 +57,7 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
 }
 
-nav {
-    background-color: var(--cor5);
-    padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.404);
-}
-
-nav > a {
-    color: var(--cor1);
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.3s;
-}
-
-nav > a:hover {
-    background-color: var(--cor3);
-    color: var(--cor5);
-}
-
 main {
-    
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -98,16 +71,16 @@ main {
 
 main h1 {
     color: var(--cor5);
-    font-family: var(--fonte-android);
-    font-size: 1.8em;
-    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: bold;
 }
 
 main h2 {
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-destaque);
     color: var(--cor4);
-    font-size: 1.3em;
-    font-weight: normal;
+    font-size: 1.8em;
+    font-weight: bold;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 }
@@ -139,12 +112,8 @@ main a:hover {
 }
 
 main img {
-    width: 100%;
-}
-
-main img.pq {
-    max-width: 350px;
     display: block;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -180,9 +149,11 @@ aside > h3 {
 }
 
 aside > ul {
-    list-style-type: '\2714\0020\0020';
-    columns: 2;
     list-style-position: inside;
+}
+
+aside  li {
+    padding: 10px;
 }
 
 footer {
