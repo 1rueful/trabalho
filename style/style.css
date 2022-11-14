@@ -31,24 +31,20 @@ header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
-    padding-top: 40px;
 }
 
 header > h1 {
     color: #fff;
     font-family: var(--fonte-titulo);
-    /*font-size: 3em;*/
-    /*font-weight: normal;*/
+    font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
     padding-top: 50px;
-    font-variant: small-caps;
-    font-size: 5vw;
 }
 
 header > p {
     font-family: var(--fonte-padrao);
-    font-size: 1.2em;
+    font-size: 3vh;
     color: #fff;
     max-width: 500px;
     padding: 0px 10px;
@@ -89,7 +85,7 @@ main p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
 }
 
@@ -112,9 +108,7 @@ main a:hover {
 }
 
 main img {
-    display: block;
-    max-width: 600px;
-    margin: auto;
+    width: 100%;
 }
 
 div.video {
