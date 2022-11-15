@@ -34,6 +34,7 @@ header {
 }
 
 header > h1 {
+    text-transform: uppercase;
     color: #fff;
     font-family: var(--fonte-titulo);
     font-size: 3em;
